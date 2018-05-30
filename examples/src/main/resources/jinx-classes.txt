@@ -1,0 +1,9 @@
+#
+# Classes to be loaded by the Jinx Add-In
+#
+# This is an alternative to listing all the classes in the jinx.ini
+# config file. Instead, as long as the jar is on the class path
+# Jinx will read this resource and load the classes listed below.
+#
+com.exceljava.com4j.examples.MacroFunctions
+com.exceljava.com4j.examples.MenuFunctions
