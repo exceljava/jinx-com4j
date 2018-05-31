@@ -22,7 +22,7 @@ Build the example project using maven:
 mvn package
 ```
 
-And then add the output folder from the examples project to your jinx.ini file.
+And then add the jars from the examples project target folder to your jinx.ini file.
 
 ```ini
 [JAVA]
