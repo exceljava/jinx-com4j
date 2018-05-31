@@ -8,7 +8,7 @@ Jinx allows you to write Excel macros in Java, Scala and Kotlin, as well as user
 This project provides wrappers for the Excel object model so that Excel can be called from Java in the same way as it is from VBA.
 This enables writing VBA-style macros and menus for Excel in Java and other JVM languages.
 
-For more information about Jinx see https://exceljava.com.
+For more information about Jinx see https://exceljava.com, and for com4j see https://com4j.kohsuke.org/.
 
 ![alt text](images/button.gif "Example macro image")
 
