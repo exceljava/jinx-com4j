@@ -32,13 +32,13 @@ classpath =
     c:/github/exceljava.com/jinx-com4j/examples/target/*.jar
 ```
 
-The maven project copies all dependencies to the target folder, and the classes to load are embedded in a resource in the built examples jar.
+The maven project copies all dependencies to the target folder, and the list of classes to load are embedded in a resource in the built examples jar.
 
 Start Excel and add the Jinx Add-In if you haven't done so already. Now when you open the included examples workbook you can test out the macros and menu function.
 
 ## Using jinx-com4j in your own project
 
-Use use jinx-com4j in your own project you need to reference the jinx-com4j jar, which is available from [jitpack.io](https://jitpack.io/#exceljava/jinx-com4j).
+To use jinx-com4j in your own project you need to reference the jinx-com4j jar, which is available from [jitpack.io](https://jitpack.io/#exceljava/jinx-com4j).
 
 To add it as a dependency to your own project add the following to your pom.xml
 
