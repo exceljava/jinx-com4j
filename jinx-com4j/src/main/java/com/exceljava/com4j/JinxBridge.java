@@ -1,24 +1,18 @@
 package com.exceljava.com4j;
 
 import com.exceljava.jinx.ExcelAddIn;
+import com.exceljava.jinx.ExcelArgumentConverter;
+import com.exceljava.jinx.IUnknown;
 import com.exceljava.com4j.excel._Application;
 import com4j.COM4J;
 import com4j.Com4jObject;
-import com4j.ComThread;
-import com4j.ROT;
+
 
 /**
  * Bridge between the Jinx add-in and com4j.
  * Used for obtaining com4j COM wrappers from code running in Excel using Jinx.
  */
 public class JinxBridge {
-
-    private static final ThreadLocal<_Application> xlApp = new ThreadLocal<_Application>() {
-        public _Application initialValue() {
-            return null;
-        }
-    };
-
     /**
      * Gets the Excel Application object for the current Excel process.
      *
@@ -34,7 +28,24 @@ public class JinxBridge {
      * @return An Excel Application instance.
      */
     public static _Application getApplication(ExcelAddIn xl) {
-        Com4jObject unk = COM4J.wrapSta(Com4jObject.class, xl.getExcelApplication());
-        return unk.queryInterface(_Application.class);
+        return xl.getExcelApplication(_Application.class);
+    }
+
+    /**
+     * Converts IUnknown to any Com4jObject type.
+     *
+     * This allows Com4jObjects to be used as method arguments where
+     * an IUnknown would be passed by Jinx. For example, in the
+     * ribbon actions.
+     *
+     * @param unk IUnknown instance.
+     * @param cls Class of type to cast to.
+     * @param <T> Type to cast to.
+     * @return IUnknown instance cast to a Com4jObject instance.
+     */
+    @ExcelArgumentConverter
+    public static <T extends Com4jObject> T convertIUnknown(IUnknown unk, Class<T> cls) {
+        Com4jObject obj = COM4J.wrapSta(Com4jObject.class, unk.getPointer(true));
+        return obj.queryInterface(cls);
     }
 }

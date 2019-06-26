@@ -1,0 +1,5 @@
+#
+# Classes to be loaded by the Jinx Add-In
+#
+com.exceljava.com4j.JinxBridge
+
