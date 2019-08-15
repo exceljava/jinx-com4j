@@ -32,6 +32,19 @@ public class JinxBridge {
     }
 
     /**
+     * Return an IUnknown instance that wraps a Com4jObject.
+     *
+     * This can be used for passing Com4jObjects back to Jinx
+     * methods requiring an IUnknown instance.
+     *
+     * @param object COM object to be wrapped as an IUnknown.
+     * @return Instance implementing IUnknown.
+     */
+    public static IUnknown getIUnknown(Com4jObject object) {
+        return new IUnknownAdaptor(object);
+    }
+
+    /**
      * Converts IUnknown to any Com4jObject type.
      *
      * This allows Com4jObjects to be used as method arguments where
