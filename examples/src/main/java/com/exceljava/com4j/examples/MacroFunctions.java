@@ -5,7 +5,11 @@ import com.exceljava.jinx.ExcelMacro;
 
 import com.exceljava.com4j.JinxBridge;
 import com.exceljava.com4j.excel.*;
-import com4j.Com4jObject;
+import com.exceljava.jinx.ExcelReference;
+import com.exceljava.jinx.IUnknown;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Example macros that use com4j to call back into Excel
@@ -75,5 +79,33 @@ public class MacroFunctions {
 
         // Set the cell value from the scrollbar value
         range.setValue(scrollbar.getValue());
+    }
+
+    @ExcelMacro(
+            value = "jinx.show_object_example",
+            shortcut = "Ctrl+Shift+I"
+    )
+    public void showObject() throws HeadlessException {
+        // Get the current selection
+        _Application app = JinxBridge.getApplication(xl);
+        Range selection = app.getSelection().queryInterface(Range.class);
+
+        // Ensure the cell is calculated
+        selection.setFormula(selection.getFormula());
+        selection.calculate();
+
+        // Get an ExcelReference corresponding to the selection
+        IUnknown unk = JinxBridge.getIUnknown(selection);
+        ExcelReference cell = xl.getReference(unk);
+
+        // Find the cached object for this cell
+        Object cachedObject = xl.getCachedObject(cell);
+
+        // Popup a non-modal dialog with the string representation of the object
+        String message = cachedObject != null ? cachedObject.toString() : "NULL";
+        JOptionPane pane = new JOptionPane(message, JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog = pane.createDialog("Java Object");
+        dialog.setModal(false);
+        dialog.setVisible(true);
     }
 }
