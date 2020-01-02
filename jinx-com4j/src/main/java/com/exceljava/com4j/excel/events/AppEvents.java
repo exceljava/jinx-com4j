@@ -634,7 +634,7 @@ public abstract class AppEvents {
    * @param wb Mandatory com.exceljava.com4j.excel._Workbook parameter.
    */
 
-  @DISPID(3293)
+  @DISPID(3344)
   public void workbookBeforeRemoteChange(
     com.exceljava.com4j.excel._Workbook wb) {
         throw new UnsupportedOperationException();
@@ -645,7 +645,7 @@ public abstract class AppEvents {
    * @param wb Mandatory com.exceljava.com4j.excel._Workbook parameter.
    */
 
-  @DISPID(3294)
+  @DISPID(3345)
   public void workbookAfterRemoteChange(
     com.exceljava.com4j.excel._Workbook wb) {
         throw new UnsupportedOperationException();
@@ -657,7 +657,7 @@ public abstract class AppEvents {
    * @param target Mandatory com.exceljava.com4j.excel.Range parameter.
    */
 
-  @DISPID(3287)
+  @DISPID(3338)
   public void remoteSheetChange(
     com4j.Com4jObject sh,
     com.exceljava.com4j.excel.Range target) {
@@ -670,7 +670,7 @@ public abstract class AppEvents {
    * @param sh Mandatory com4j.Com4jObject parameter.
    */
 
-  @DISPID(3295)
+  @DISPID(3346)
   public void remoteWorkbookNewSheet(
     com.exceljava.com4j.excel._Workbook wb,
     com4j.Com4jObject sh) {
@@ -683,7 +683,7 @@ public abstract class AppEvents {
    * @param ch Mandatory com.exceljava.com4j.excel._Chart parameter.
    */
 
-  @DISPID(3296)
+  @DISPID(3347)
   public void remoteWorkbookNewChart(
     com.exceljava.com4j.excel._Workbook wb,
     com.exceljava.com4j.excel._Chart ch) {
@@ -695,7 +695,7 @@ public abstract class AppEvents {
    * @param sh Mandatory com4j.Com4jObject parameter.
    */
 
-  @DISPID(3290)
+  @DISPID(3341)
   public void remoteSheetBeforeDelete(
     com4j.Com4jObject sh) {
         throw new UnsupportedOperationException();
@@ -707,7 +707,7 @@ public abstract class AppEvents {
    * @param target Mandatory com.exceljava.com4j.excel.PivotTable parameter.
    */
 
-  @DISPID(3291)
+  @DISPID(3342)
   public void remoteSheetPivotTableUpdate(
     com4j.Com4jObject sh,
     com.exceljava.com4j.excel.PivotTable target) {

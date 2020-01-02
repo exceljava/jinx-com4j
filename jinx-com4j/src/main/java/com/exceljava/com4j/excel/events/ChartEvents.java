@@ -169,7 +169,7 @@ public abstract class ChartEvents {
   /**
    */
 
-  @DISPID(3279)
+  @DISPID(3330)
   public void remoteResize() {
         throw new UnsupportedOperationException();
   }
@@ -180,7 +180,7 @@ public abstract class ChartEvents {
    * @param pointIndex Mandatory int parameter.
    */
 
-  @DISPID(3280)
+  @DISPID(3331)
   public void remoteSeriesChange(
     int seriesIndex,
     int pointIndex) {

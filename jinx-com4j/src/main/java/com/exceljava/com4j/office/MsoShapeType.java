@@ -185,6 +185,18 @@ public enum MsoShapeType implements ComEnum {
    * </p>
    */
   msoLinkedGraphic(29),
+  /**
+   * <p>
+   * The value of this constant is 30
+   * </p>
+   */
+  mso3DModel(30),
+  /**
+   * <p>
+   * The value of this constant is 31
+   * </p>
+   */
+  msoLinked3DModel(31),
   ;
 
   private final int value;

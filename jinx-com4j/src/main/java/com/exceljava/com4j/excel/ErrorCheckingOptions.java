@@ -302,5 +302,29 @@ public interface ErrorCheckingOptions extends Com4jObject {
     boolean rhs);
 
 
+  /**
+   * <p>
+   * Getter method for the COM property "MisleadingNumberFormats"
+   * </p>
+   */
+
+  @DISPID(3298)
+  @PropGet
+  boolean getMisleadingNumberFormats();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "MisleadingNumberFormats"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3298)
+  @PropPut
+  void setMisleadingNumberFormats(
+    boolean rhs);
+
+
   // Properties:
 }

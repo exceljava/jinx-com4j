@@ -206,5 +206,149 @@ public interface SortFields extends Com4jObject,Iterable<Com4jObject> {
   @PropGet
   java.util.Iterator<Com4jObject> iterator();
 
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter sortOn is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter order is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter customOrder is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter dataOption is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter subField is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add2(key, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param key Mandatory com.exceljava.com4j.excel.Range parameter.
+   */
+
+  @DISPID(3054)
+  @UseDefaultValues(paramIndexMapping = {0}, optParamIndex = {1, 2, 3, 4, 5}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004", "80020004", "80020004"})
+  @ReturnValue(index=-1)
+  com.exceljava.com4j.excel.SortField add2(
+    com.exceljava.com4j.excel.Range key);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter order is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter customOrder is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter dataOption is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter subField is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add2(key, sortOn, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param key Mandatory com.exceljava.com4j.excel.Range parameter.
+   * @param sortOn Optional parameter. Default value is com4j.Variant.getMissing()
+   */
+
+  @DISPID(3054)
+  @UseDefaultValues(paramIndexMapping = {0, 1}, optParamIndex = {2, 3, 4, 5}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004", "80020004"})
+  @ReturnValue(index=-1)
+  com.exceljava.com4j.excel.SortField add2(
+    com.exceljava.com4j.excel.Range key,
+    @Optional java.lang.Object sortOn);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter customOrder is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter dataOption is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter subField is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add2(key, sortOn, order, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param key Mandatory com.exceljava.com4j.excel.Range parameter.
+   * @param sortOn Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param order Optional parameter. Default value is com4j.Variant.getMissing()
+   */
+
+  @DISPID(3054)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2}, optParamIndex = {3, 4, 5}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004"})
+  @ReturnValue(index=-1)
+  com.exceljava.com4j.excel.SortField add2(
+    com.exceljava.com4j.excel.Range key,
+    @Optional java.lang.Object sortOn,
+    @Optional java.lang.Object order);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter dataOption is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter subField is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add2(key, sortOn, order, customOrder, com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param key Mandatory com.exceljava.com4j.excel.Range parameter.
+   * @param sortOn Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param order Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param customOrder Optional parameter. Default value is com4j.Variant.getMissing()
+   */
+
+  @DISPID(3054)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3}, optParamIndex = {4, 5}, javaType = {java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004"})
+  @ReturnValue(index=-1)
+  com.exceljava.com4j.excel.SortField add2(
+    com.exceljava.com4j.excel.Range key,
+    @Optional java.lang.Object sortOn,
+    @Optional java.lang.Object order,
+    @Optional java.lang.Object customOrder);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter subField is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add2(key, sortOn, order, customOrder, dataOption, com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param key Mandatory com.exceljava.com4j.excel.Range parameter.
+   * @param sortOn Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param order Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param customOrder Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param dataOption Optional parameter. Default value is com4j.Variant.getMissing()
+   */
+
+  @DISPID(3054)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3, 4}, optParamIndex = {5}, javaType = {java.lang.Object.class}, nativeType = {NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR}, literal = {"80020004"})
+  @ReturnValue(index=-1)
+  com.exceljava.com4j.excel.SortField add2(
+    com.exceljava.com4j.excel.Range key,
+    @Optional java.lang.Object sortOn,
+    @Optional java.lang.Object order,
+    @Optional java.lang.Object customOrder,
+    @Optional java.lang.Object dataOption);
+
+  /**
+   * @param key Mandatory com.exceljava.com4j.excel.Range parameter.
+   * @param sortOn Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param order Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param customOrder Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param dataOption Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param subField Optional parameter. Default value is com4j.Variant.getMissing()
+   */
+
+  @DISPID(3054)
+  com.exceljava.com4j.excel.SortField add2(
+    com.exceljava.com4j.excel.Range key,
+    @Optional java.lang.Object sortOn,
+    @Optional java.lang.Object order,
+    @Optional java.lang.Object customOrder,
+    @Optional java.lang.Object dataOption,
+    @Optional java.lang.Object subField);
+
+
   // Properties:
 }

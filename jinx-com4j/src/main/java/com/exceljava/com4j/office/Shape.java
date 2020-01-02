@@ -1141,5 +1141,56 @@ public interface Shape extends com.exceljava.com4j.office._IMsoDispObj {
     com.exceljava.com4j.office.MsoGraphicStyleIndex graphicStyle);
 
 
+  /**
+   * @param pictureType Mandatory com.exceljava.com4j.office.MsoPictureType parameter.
+   * @param fileName Mandatory java.lang.String parameter.
+   * @param fSaveShapesIndividually Mandatory boolean parameter.
+   */
+
+  @DISPID(160) //= 0xa0. The runtime will prefer the VTID if present
+  @VTID(99)
+  void saveAsPicture(
+    com.exceljava.com4j.office.MsoPictureType pictureType,
+    java.lang.String fileName,
+    boolean fSaveShapesIndividually);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Model3D"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.office.Model3DFormat
+   */
+
+  @DISPID(161) //= 0xa1. The runtime will prefer the VTID if present
+  @VTID(100)
+  com.exceljava.com4j.office.Model3DFormat getModel3D();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Decorative"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.office.MsoTriState
+   */
+
+  @DISPID(162) //= 0xa2. The runtime will prefer the VTID if present
+  @VTID(101)
+  com.exceljava.com4j.office.MsoTriState getDecorative();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "Decorative"
+   * </p>
+   * @param fDecorative Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   */
+
+  @DISPID(162) //= 0xa2. The runtime will prefer the VTID if present
+  @VTID(102)
+  void setDecorative(
+    com.exceljava.com4j.office.MsoTriState fDecorative);
+
+
   // Properties:
 }

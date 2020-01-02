@@ -23,6 +23,18 @@ public enum XlFindLookIn implements ComEnum {
    * </p>
    */
   xlValues(-4163),
+  /**
+   * <p>
+   * The value of this constant is -4184
+   * </p>
+   */
+  xlCommentsThreaded(-4184),
+  /**
+   * <p>
+   * The value of this constant is -4185
+   * </p>
+   */
+  xlFormulas2(-4185),
   ;
 
   private final int value;

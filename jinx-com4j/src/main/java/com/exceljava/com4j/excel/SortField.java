@@ -205,5 +205,29 @@ public interface SortField extends Com4jObject {
     com.exceljava.com4j.excel.Icon icon);
 
 
+  /**
+   * <p>
+   * Getter method for the COM property "SubField"
+   * </p>
+   */
+
+  @DISPID(3322)
+  @PropGet
+  java.lang.Object getSubField();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "SubField"
+   * </p>
+   * @param rhs Mandatory java.lang.Object parameter.
+   */
+
+  @DISPID(3322)
+  @PropPut
+  void setSubField(
+    java.lang.Object rhs);
+
+
   // Properties:
 }

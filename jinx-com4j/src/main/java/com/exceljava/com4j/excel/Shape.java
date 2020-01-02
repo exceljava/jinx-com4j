@@ -1244,5 +1244,40 @@ public interface Shape extends Com4jObject {
     com.exceljava.com4j.office.MsoGraphicStyleIndex rhs);
 
 
+  /**
+   * <p>
+   * Getter method for the COM property "Model3D"
+   * </p>
+   */
+
+  @DISPID(3351)
+  @PropGet
+  com.exceljava.com4j.excel.Model3DFormat getModel3D();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Decorative"
+   * </p>
+   */
+
+  @DISPID(3352)
+  @PropGet
+  com.exceljava.com4j.office.MsoTriState getDecorative();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "Decorative"
+   * </p>
+   * @param rhs Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   */
+
+  @DISPID(3352)
+  @PropPut
+  void setDecorative(
+    com.exceljava.com4j.office.MsoTriState rhs);
+
+
   // Properties:
 }

@@ -321,5 +321,74 @@ public interface IAutoCorrect extends Com4jObject {
     boolean rhs);
 
 
+  /**
+   * <p>
+   * Getter method for the COM property "KeepGeneralFormatLeadingZerosAsText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @VTID(30)
+  boolean getKeepGeneralFormatLeadingZerosAsText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "KeepGeneralFormatLeadingZerosAsText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @VTID(31)
+  void setKeepGeneralFormatLeadingZerosAsText(
+    boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "KeepGeneralFormatLargeNumbersAsText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @VTID(32)
+  boolean getKeepGeneralFormatLargeNumbersAsText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "KeepGeneralFormatLargeNumbersAsText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @VTID(33)
+  void setKeepGeneralFormatLargeNumbersAsText(
+    boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "KeepGeneralFormatDigitsWithEAsText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @VTID(34)
+  boolean getKeepGeneralFormatDigitsWithEAsText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "KeepGeneralFormatDigitsWithEAsText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @VTID(35)
+  void setKeepGeneralFormatDigitsWithEAsText(
+    boolean rhs);
+
+
   // Properties:
 }

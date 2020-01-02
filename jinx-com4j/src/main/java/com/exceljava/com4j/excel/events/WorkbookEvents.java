@@ -508,7 +508,7 @@ public abstract class WorkbookEvents {
   /**
    */
 
-  @DISPID(3285)
+  @DISPID(3336)
   public void beforeRemoteChange() {
         throw new UnsupportedOperationException();
   }
@@ -517,7 +517,7 @@ public abstract class WorkbookEvents {
   /**
    */
 
-  @DISPID(3286)
+  @DISPID(3337)
   public void afterRemoteChange() {
         throw new UnsupportedOperationException();
   }
@@ -528,7 +528,7 @@ public abstract class WorkbookEvents {
    * @param target Mandatory com.exceljava.com4j.excel.Range parameter.
    */
 
-  @DISPID(3287)
+  @DISPID(3338)
   public void remoteSheetChange(
     com4j.Com4jObject sh,
     com.exceljava.com4j.excel.Range target) {
@@ -540,7 +540,7 @@ public abstract class WorkbookEvents {
    * @param sh Mandatory com4j.Com4jObject parameter.
    */
 
-  @DISPID(3288)
+  @DISPID(3339)
   public void remoteNewSheet(
     com4j.Com4jObject sh) {
         throw new UnsupportedOperationException();
@@ -551,7 +551,7 @@ public abstract class WorkbookEvents {
    * @param ch Mandatory com.exceljava.com4j.excel._Chart parameter.
    */
 
-  @DISPID(3289)
+  @DISPID(3340)
   public void remoteNewChart(
     com.exceljava.com4j.excel._Chart ch) {
         throw new UnsupportedOperationException();
@@ -562,7 +562,7 @@ public abstract class WorkbookEvents {
    * @param sh Mandatory com4j.Com4jObject parameter.
    */
 
-  @DISPID(3290)
+  @DISPID(3341)
   public void remoteSheetBeforeDelete(
     com4j.Com4jObject sh) {
         throw new UnsupportedOperationException();
@@ -574,7 +574,7 @@ public abstract class WorkbookEvents {
    * @param target Mandatory com.exceljava.com4j.excel.PivotTable parameter.
    */
 
-  @DISPID(3291)
+  @DISPID(3342)
   public void remoteSheetPivotTableUpdate(
     com4j.Com4jObject sh,
     com.exceljava.com4j.excel.PivotTable target) {
@@ -587,7 +587,7 @@ public abstract class WorkbookEvents {
    * @param target Mandatory com.exceljava.com4j.excel.PivotTable parameter.
    */
 
-  @DISPID(3292)
+  @DISPID(3343)
   public void remoteSheetPivotTableChangeSync(
     com4j.Com4jObject sh,
     com.exceljava.com4j.excel.PivotTable target) {

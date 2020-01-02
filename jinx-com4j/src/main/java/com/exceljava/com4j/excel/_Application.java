@@ -24042,5 +24042,130 @@ public interface _Application extends Com4jObject {
   com.exceljava.com4j.excel.DefaultPivotTableLayoutOptions getDefaultPivotTableLayoutOptions();
 
 
+  /**
+   * <p>
+   * Getter method for the COM property "CSVKeepLeadingZerosAsText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @DISPID(3308) //= 0xcec. The runtime will prefer the VTID if present
+  @VTID(457)
+  boolean getCSVKeepLeadingZerosAsText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "CSVKeepLeadingZerosAsText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3308) //= 0xcec. The runtime will prefer the VTID if present
+  @VTID(458)
+  void setCSVKeepLeadingZerosAsText(
+    boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "CSVKeepLargeNumbersAsText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @DISPID(3309) //= 0xced. The runtime will prefer the VTID if present
+  @VTID(459)
+  boolean getCSVKeepLargeNumbersAsText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "CSVKeepLargeNumbersAsText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3309) //= 0xced. The runtime will prefer the VTID if present
+  @VTID(460)
+  void setCSVKeepLargeNumbersAsText(
+    boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "CSVKeepDigitsWithEAsText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @DISPID(3310) //= 0xcee. The runtime will prefer the VTID if present
+  @VTID(461)
+  boolean getCSVKeepDigitsWithEAsText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "CSVKeepDigitsWithEAsText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3310) //= 0xcee. The runtime will prefer the VTID if present
+  @VTID(462)
+  void setCSVKeepDigitsWithEAsText(
+    boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "CSVDisplayNumberConversionWarning"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @DISPID(3311) //= 0xcef. The runtime will prefer the VTID if present
+  @VTID(463)
+  boolean getCSVDisplayNumberConversionWarning();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "CSVDisplayNumberConversionWarning"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3311) //= 0xcef. The runtime will prefer the VTID if present
+  @VTID(464)
+  void setCSVDisplayNumberConversionWarning(
+    boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "CSVKeepColumnAsTextIfMultipleEntriesAreText"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @DISPID(3312) //= 0xcf0. The runtime will prefer the VTID if present
+  @VTID(465)
+  boolean getCSVKeepColumnAsTextIfMultipleEntriesAreText();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "CSVKeepColumnAsTextIfMultipleEntriesAreText"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3312) //= 0xcf0. The runtime will prefer the VTID if present
+  @VTID(466)
+  void setCSVKeepColumnAsTextIfMultipleEntriesAreText(
+    boolean rhs);
+
+
   // Properties:
 }
