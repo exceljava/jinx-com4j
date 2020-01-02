@@ -53,7 +53,7 @@ To add it as a dependency to your own project add the following to your pom.xml
 <dependency>
     <groupId>com.github.exceljava.jinx-com4j</groupId>
     <artifactId>jinx-com4j</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
