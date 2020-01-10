@@ -73,13 +73,13 @@ public interface AutoFilter extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    */
 
   @DISPID(880)
   @PropGet
-  com.exceljava.com4j.excel.Sort getSort();
+  com.exceljava.com4j.excel.Sort get_Sort();
 
 
   /**
@@ -94,6 +94,17 @@ public interface AutoFilter extends Com4jObject {
 
   @DISPID(794)
   void showAllData();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   */
+
+  @DISPID(3288)
+  @PropGet
+  com.exceljava.com4j.excel.Sort getSort();
 
 
   // Properties:

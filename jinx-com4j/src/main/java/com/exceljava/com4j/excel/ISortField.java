@@ -203,5 +203,29 @@ public interface ISortField extends Com4jObject {
     com.exceljava.com4j.excel.Icon icon);
 
 
+  /**
+   * <p>
+   * Getter method for the COM property "SubField"
+   * </p>
+   * @return  Returns a value of type java.lang.Object
+   */
+
+  @VTID(25)
+  @ReturnValue(type=NativeType.VARIANT)
+  java.lang.Object getSubField();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "SubField"
+   * </p>
+   * @param rhs Mandatory java.lang.Object parameter.
+   */
+
+  @VTID(26)
+  void setSubField(
+    @MarshalAs(NativeType.VARIANT) java.lang.Object rhs);
+
+
   // Properties:
 }

@@ -208,7 +208,7 @@ public abstract class DocEvents {
    * @param target Mandatory com.exceljava.com4j.excel.Range parameter.
    */
 
-  @DISPID(3281)
+  @DISPID(3332)
   public void remoteChange(
     com.exceljava.com4j.excel.Range target) {
         throw new UnsupportedOperationException();
@@ -218,7 +218,7 @@ public abstract class DocEvents {
   /**
    */
 
-  @DISPID(3282)
+  @DISPID(3333)
   public void remoteBeforeDelete() {
         throw new UnsupportedOperationException();
   }
@@ -228,7 +228,7 @@ public abstract class DocEvents {
    * @param target Mandatory com.exceljava.com4j.excel.PivotTable parameter.
    */
 
-  @DISPID(3283)
+  @DISPID(3334)
   public void remotePivotTableUpdate(
     com.exceljava.com4j.excel.PivotTable target) {
         throw new UnsupportedOperationException();
@@ -239,7 +239,7 @@ public abstract class DocEvents {
    * @param target Mandatory com.exceljava.com4j.excel.PivotTable parameter.
    */
 
-  @DISPID(3284)
+  @DISPID(3335)
   public void remotePivotTableChangeSync(
     com.exceljava.com4j.excel.PivotTable target) {
         throw new UnsupportedOperationException();

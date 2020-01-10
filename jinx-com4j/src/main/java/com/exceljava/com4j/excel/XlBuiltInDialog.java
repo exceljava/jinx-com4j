@@ -1579,16 +1579,16 @@ public enum XlBuiltInDialog implements ComEnum {
   xlDialogRecommendedPivotTables(1258),
   /**
    * <p>
-   * The value of this constant is 1299
+   * The value of this constant is 1300
    * </p>
    */
-  xlDialogForecastETS(1299),
+  xlDialogForecastETS(1300),
   /**
    * <p>
-   * The value of this constant is 1359
+   * The value of this constant is 1360
    * </p>
    */
-  xlDialogPivotDefaultLayout(1359),
+  xlDialogPivotDefaultLayout(1360),
   ;
 
   private final int value;

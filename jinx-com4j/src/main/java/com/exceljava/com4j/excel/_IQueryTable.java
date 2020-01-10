@@ -1461,12 +1461,23 @@ public interface _IQueryTable extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.Sort
    */
 
   @VTID(129)
+  com.exceljava.com4j.excel.Sort get_Sort();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.Sort
+   */
+
+  @VTID(130)
   com.exceljava.com4j.excel.Sort getSort();
 
 

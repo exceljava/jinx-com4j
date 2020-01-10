@@ -390,13 +390,13 @@ public interface ListObject extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "AutoFilter"
+   * Getter method for the COM property "_AutoFilter"
    * </p>
    */
 
   @DISPID(793)
   @PropGet
-  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+  com.exceljava.com4j.excel.AutoFilter get_AutoFilter();
 
 
   /**
@@ -521,13 +521,13 @@ public interface ListObject extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    */
 
   @DISPID(880)
   @PropGet
-  com.exceljava.com4j.excel.Sort getSort();
+  com.exceljava.com4j.excel.Sort get_Sort();
 
 
   /**
@@ -653,6 +653,28 @@ public interface ListObject extends Com4jObject {
   @PropPut
   void setShowAutoFilterDropDown(
     boolean rhs);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "AutoFilter"
+   * </p>
+   */
+
+  @DISPID(3289)
+  @PropGet
+  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   */
+
+  @DISPID(3288)
+  @PropGet
+  com.exceljava.com4j.excel.Sort getSort();
 
 
   // Properties:

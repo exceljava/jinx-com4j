@@ -10558,7 +10558,7 @@ public interface _Workbook extends Com4jObject {
    * @return  Returns a value of type java.lang.String
    */
 
-  @DISPID(3185) //= 0xc71. The runtime will prefer the VTID if present
+  @DISPID(3328) //= 0xd00. The runtime will prefer the VTID if present
   @VTID(276)
   @UseDefaultValues(paramIndexMapping = {0, 1, 3}, optParamIndex = {2}, javaType = {java.lang.Object.class}, nativeType = {NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR}, literal = {"80020004"})
   @ReturnValue(index=3)
@@ -10573,7 +10573,7 @@ public interface _Workbook extends Com4jObject {
    * @return  Returns a value of type java.lang.String
    */
 
-  @DISPID(3185) //= 0xc71. The runtime will prefer the VTID if present
+  @DISPID(3328) //= 0xd00. The runtime will prefer the VTID if present
   @VTID(276)
   java.lang.String publishToDocs(
     java.lang.String title,
@@ -10596,7 +10596,7 @@ public interface _Workbook extends Com4jObject {
    * @return  Returns a value of type com.exceljava.com4j.excel.PublishedDocs
    */
 
-  @DISPID(3227) //= 0xc9b. The runtime will prefer the VTID if present
+  @DISPID(3329) //= 0xd01. The runtime will prefer the VTID if present
   @VTID(277)
   @UseDefaultValues(paramIndexMapping = {1}, optParamIndex = {0}, javaType = {java.lang.Object.class}, nativeType = {NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR}, literal = {"80020004"})
   @ReturnValue(index=1)
@@ -10607,7 +10607,7 @@ public interface _Workbook extends Com4jObject {
    * @return  Returns a value of type com.exceljava.com4j.excel.PublishedDocs
    */
 
-  @DISPID(3227) //= 0xc9b. The runtime will prefer the VTID if present
+  @DISPID(3329) //= 0xd01. The runtime will prefer the VTID if present
   @VTID(277)
   com.exceljava.com4j.excel.PublishedDocs lookUpInDocs(
     @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object filename);
@@ -10720,6 +10720,14 @@ public interface _Workbook extends Com4jObject {
   @VTID(280)
   void setAutoSaveOn(
     boolean rhs);
+
+
+  /**
+   */
+
+  @DISPID(3279) //= 0xccf. The runtime will prefer the VTID if present
+  @VTID(281)
+  void convertComments();
 
 
   // Properties:

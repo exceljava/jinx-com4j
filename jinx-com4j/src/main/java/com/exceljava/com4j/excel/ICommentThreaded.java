@@ -158,23 +158,12 @@ public interface ICommentThreaded extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "SupportsReplies"
-   * </p>
-   * @return  Returns a value of type boolean
-   */
-
-  @VTID(13)
-  boolean getSupportsReplies();
-
-
-  /**
-   * <p>
    * Getter method for the COM property "Replies"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.CommentsThreaded
    */
 
-  @VTID(14)
+  @VTID(13)
   com.exceljava.com4j.excel.CommentsThreaded getReplies();
 
 
@@ -185,7 +174,7 @@ public interface ICommentThreaded extends Com4jObject {
    * @return  Returns a value of type com.exceljava.com4j.excel.Author
    */
 
-  @VTID(15)
+  @VTID(14)
   com.exceljava.com4j.excel.Author getAuthor();
 
 
@@ -196,7 +185,7 @@ public interface ICommentThreaded extends Com4jObject {
    * @return  Returns a value of type java.lang.Object
    */
 
-  @VTID(16)
+  @VTID(15)
   @ReturnValue(type=NativeType.VARIANT)
   java.lang.Object getDate();
 
@@ -205,7 +194,7 @@ public interface ICommentThreaded extends Com4jObject {
    * @return  Returns a value of type com.exceljava.com4j.excel.CommentThreaded
    */
 
-  @VTID(17)
+  @VTID(16)
   com.exceljava.com4j.excel.CommentThreaded next();
 
 
@@ -213,8 +202,31 @@ public interface ICommentThreaded extends Com4jObject {
    * @return  Returns a value of type com.exceljava.com4j.excel.CommentThreaded
    */
 
-  @VTID(18)
+  @VTID(17)
   com.exceljava.com4j.excel.CommentThreaded previous();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Resolved"
+   * </p>
+   * @return  Returns a value of type boolean
+   */
+
+  @VTID(18)
+  boolean getResolved();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "Resolved"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @VTID(19)
+  void setResolved(
+    boolean rhs);
 
 
   // Properties:

@@ -1016,5 +1016,92 @@ public interface Shapes extends com.exceljava.com4j.office._IMsoDispObj,Iterable
     @Optional @DefaultValue("-1") com.exceljava.com4j.office.MsoPictureCompress compress);
 
 
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>float parameter width is set to -1.0f</li><li>float parameter height is set to -1.0f</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(fileName, linkToFile, saveWithDocument, left, top, -1.0f, -1.0f);
+   * </code>
+   * </p>
+   * @param fileName Mandatory java.lang.String parameter.
+   * @param linkToFile Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   * @param saveWithDocument Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   * @param left Mandatory float parameter.
+   * @param top Mandatory float parameter.
+   * @return  Returns a value of type com.exceljava.com4j.office.Shape
+   */
+
+  @DISPID(31) //= 0x1f. The runtime will prefer the VTID if present
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3, 4, 7}, optParamIndex = {5, 6}, javaType = {float.class, float.class}, nativeType = {NativeType.Float, NativeType.Float}, variantType = {Variant.Type.VT_R4, Variant.Type.VT_R4}, literal = {"-1.0", "-1.0"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.office.Shape add3DModel(
+    java.lang.String fileName,
+    com.exceljava.com4j.office.MsoTriState linkToFile,
+    com.exceljava.com4j.office.MsoTriState saveWithDocument,
+    float left,
+    float top);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>float parameter height is set to -1.0f</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(fileName, linkToFile, saveWithDocument, left, top, width, -1.0f);
+   * </code>
+   * </p>
+   * @param fileName Mandatory java.lang.String parameter.
+   * @param linkToFile Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   * @param saveWithDocument Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   * @param left Mandatory float parameter.
+   * @param top Mandatory float parameter.
+   * @param width Optional parameter. Default value is -1.0f
+   * @return  Returns a value of type com.exceljava.com4j.office.Shape
+   */
+
+  @DISPID(31) //= 0x1f. The runtime will prefer the VTID if present
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3, 4, 5, 7}, optParamIndex = {6}, javaType = {float.class}, nativeType = {NativeType.Float}, variantType = {Variant.Type.VT_R4}, literal = {"-1.0"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.office.Shape add3DModel(
+    java.lang.String fileName,
+    com.exceljava.com4j.office.MsoTriState linkToFile,
+    com.exceljava.com4j.office.MsoTriState saveWithDocument,
+    float left,
+    float top,
+    @Optional @DefaultValue("-1") float width);
+
+  /**
+   * @param fileName Mandatory java.lang.String parameter.
+   * @param linkToFile Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   * @param saveWithDocument Mandatory com.exceljava.com4j.office.MsoTriState parameter.
+   * @param left Mandatory float parameter.
+   * @param top Mandatory float parameter.
+   * @param width Optional parameter. Default value is -1.0f
+   * @param height Optional parameter. Default value is -1.0f
+   * @return  Returns a value of type com.exceljava.com4j.office.Shape
+   */
+
+  @DISPID(31) //= 0x1f. The runtime will prefer the VTID if present
+  @VTID(35)
+  com.exceljava.com4j.office.Shape add3DModel(
+    java.lang.String fileName,
+    com.exceljava.com4j.office.MsoTriState linkToFile,
+    com.exceljava.com4j.office.MsoTriState saveWithDocument,
+    float left,
+    float top,
+    @Optional @DefaultValue("-1") float width,
+    @Optional @DefaultValue("-1") float height);
+
+
   // Properties:
 }

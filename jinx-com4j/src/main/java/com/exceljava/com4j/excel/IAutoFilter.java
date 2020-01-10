@@ -74,13 +74,13 @@ public interface IAutoFilter extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.Sort
    */
 
   @VTID(13)
-  com.exceljava.com4j.excel.Sort getSort();
+  com.exceljava.com4j.excel.Sort get_Sort();
 
 
   /**
@@ -95,6 +95,17 @@ public interface IAutoFilter extends Com4jObject {
 
   @VTID(15)
   void showAllData();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.Sort
+   */
+
+  @VTID(16)
+  com.exceljava.com4j.excel.Sort getSort();
 
 
   // Properties:

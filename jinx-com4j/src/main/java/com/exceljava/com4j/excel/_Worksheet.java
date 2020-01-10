@@ -5778,14 +5778,14 @@ public interface _Worksheet extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "AutoFilter"
+   * Getter method for the COM property "_AutoFilter"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.AutoFilter
    */
 
   @DISPID(793) //= 0x319. The runtime will prefer the VTID if present
   @VTID(129)
-  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+  com.exceljava.com4j.excel.AutoFilter get_AutoFilter();
 
 
   /**
@@ -7986,14 +7986,14 @@ public interface _Worksheet extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.Sort
    */
 
   @DISPID(880) //= 0x370. The runtime will prefer the VTID if present
   @VTID(149)
-  com.exceljava.com4j.excel.Sort getSort();
+  com.exceljava.com4j.excel.Sort get_Sort();
 
 
   /**
@@ -8834,6 +8834,42 @@ public interface _Worksheet extends Com4jObject {
     @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object textCodepage,
     @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object textVisualLayout,
     @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object local);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "CommentsThreaded"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.CommentsThreaded
+   */
+
+  @DISPID(3282) //= 0xcd2. The runtime will prefer the VTID if present
+  @VTID(154)
+  com.exceljava.com4j.excel.CommentsThreaded getCommentsThreaded();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "AutoFilter"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.AutoFilter
+   */
+
+  @DISPID(3289) //= 0xcd9. The runtime will prefer the VTID if present
+  @VTID(155)
+  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.Sort
+   */
+
+  @DISPID(3288) //= 0xcd8. The runtime will prefer the VTID if present
+  @VTID(156)
+  com.exceljava.com4j.excel.Sort getSort();
 
 
   // Properties:

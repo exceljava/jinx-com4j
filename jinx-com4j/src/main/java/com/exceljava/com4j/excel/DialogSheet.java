@@ -2426,13 +2426,13 @@ public interface DialogSheet extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "AutoFilter"
+   * Getter method for the COM property "_AutoFilter"
    * </p>
    */
 
   @DISPID(793)
   @PropGet
-  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+  com.exceljava.com4j.excel.AutoFilter get_AutoFilter();
 
 
   /**
@@ -4210,13 +4210,13 @@ public interface DialogSheet extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    */
 
   @DISPID(880)
   @PropGet
-  com.exceljava.com4j.excel.Sort getSort();
+  com.exceljava.com4j.excel.Sort get_Sort();
 
 
   /**
@@ -5027,6 +5027,39 @@ public interface DialogSheet extends Com4jObject {
     @Optional java.lang.Object textCodepage,
     @Optional java.lang.Object textVisualLayout,
     @Optional java.lang.Object local);
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "CommentsThreaded"
+   * </p>
+   */
+
+  @DISPID(3282)
+  @PropGet
+  com.exceljava.com4j.excel.CommentsThreaded getCommentsThreaded();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "AutoFilter"
+   * </p>
+   */
+
+  @DISPID(3289)
+  @PropGet
+  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   */
+
+  @DISPID(3288)
+  @PropGet
+  com.exceljava.com4j.excel.Sort getSort();
 
 
   /**

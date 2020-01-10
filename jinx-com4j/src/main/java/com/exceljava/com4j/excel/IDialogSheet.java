@@ -3921,13 +3921,13 @@ public interface IDialogSheet extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "AutoFilter"
+   * Getter method for the COM property "_AutoFilter"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.AutoFilter
    */
 
   @VTID(122)
-  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+  com.exceljava.com4j.excel.AutoFilter get_AutoFilter();
 
 
   /**
@@ -5860,13 +5860,13 @@ public interface IDialogSheet extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "Sort"
+   * Getter method for the COM property "_Sort"
    * </p>
    * @return  Returns a value of type com.exceljava.com4j.excel.Sort
    */
 
   @VTID(142)
-  com.exceljava.com4j.excel.Sort getSort();
+  com.exceljava.com4j.excel.Sort get_Sort();
 
 
   /**
@@ -6681,12 +6681,45 @@ public interface IDialogSheet extends Com4jObject {
 
   /**
    * <p>
+   * Getter method for the COM property "CommentsThreaded"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.CommentsThreaded
+   */
+
+  @VTID(147)
+  com.exceljava.com4j.excel.CommentsThreaded getCommentsThreaded();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "AutoFilter"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.AutoFilter
+   */
+
+  @VTID(148)
+  com.exceljava.com4j.excel.AutoFilter getAutoFilter();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Sort"
+   * </p>
+   * @return  Returns a value of type com.exceljava.com4j.excel.Sort
+   */
+
+  @VTID(149)
+  com.exceljava.com4j.excel.Sort getSort();
+
+
+  /**
+   * <p>
    * Getter method for the COM property "DefaultButton"
    * </p>
    * @return  Returns a value of type java.lang.Object
    */
 
-  @VTID(147)
+  @VTID(150)
   @ReturnValue(type=NativeType.VARIANT)
   java.lang.Object getDefaultButton();
 
@@ -6698,7 +6731,7 @@ public interface IDialogSheet extends Com4jObject {
    * @param rhs Mandatory java.lang.Object parameter.
    */
 
-  @VTID(148)
+  @VTID(151)
   void setDefaultButton(
     @MarshalAs(NativeType.VARIANT) java.lang.Object rhs);
 
@@ -6710,7 +6743,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type com.exceljava.com4j.excel.DialogFrame
    */
 
-  @VTID(149)
+  @VTID(152)
   com.exceljava.com4j.excel.DialogFrame getDialogFrame();
 
 
@@ -6729,7 +6762,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type com4j.Com4jObject
    */
 
-  @VTID(150)
+  @VTID(153)
   @UseDefaultValues(paramIndexMapping = {1}, optParamIndex = {0}, javaType = {java.lang.Object.class}, nativeType = {NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR}, literal = {"80020004"})
   @ReturnValue(type=NativeType.Dispatch,index=1)
   com4j.Com4jObject editBoxes();
@@ -6739,7 +6772,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type com4j.Com4jObject
    */
 
-  @VTID(150)
+  @VTID(153)
   @ReturnValue(type=NativeType.Dispatch)
   com4j.Com4jObject editBoxes(
     @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object index);
@@ -6752,7 +6785,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type java.lang.Object
    */
 
-  @VTID(151)
+  @VTID(154)
   @ReturnValue(type=NativeType.VARIANT)
   java.lang.Object getFocus();
 
@@ -6764,7 +6797,7 @@ public interface IDialogSheet extends Com4jObject {
    * @param rhs Mandatory java.lang.Object parameter.
    */
 
-  @VTID(152)
+  @VTID(155)
   void setFocus(
     @MarshalAs(NativeType.VARIANT) java.lang.Object rhs);
 
@@ -6784,7 +6817,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type boolean
    */
 
-  @VTID(153)
+  @VTID(156)
   @UseDefaultValues(paramIndexMapping = {1}, optParamIndex = {0}, javaType = {java.lang.Object.class}, nativeType = {NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR}, literal = {"80020004"})
   @ReturnValue(index=1)
   boolean hide();
@@ -6794,7 +6827,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type boolean
    */
 
-  @VTID(153)
+  @VTID(156)
   boolean hide(
     @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object cancel);
 
@@ -6803,7 +6836,7 @@ public interface IDialogSheet extends Com4jObject {
    * @return  Returns a value of type boolean
    */
 
-  @VTID(154)
+  @VTID(157)
   boolean show();
 
 

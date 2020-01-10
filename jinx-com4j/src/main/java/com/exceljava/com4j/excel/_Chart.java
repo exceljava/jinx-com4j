@@ -9549,7 +9549,7 @@ public interface _Chart extends Com4jObject {
    * @return  Returns a value of type boolean
    */
 
-  @DISPID(3278) //= 0xcce. The runtime will prefer the VTID if present
+  @DISPID(3327) //= 0xcff. The runtime will prefer the VTID if present
   @VTID(212)
   boolean getDisplayValueNotAvailableAsBlank();
 
@@ -9561,7 +9561,7 @@ public interface _Chart extends Com4jObject {
    * @param rhs Mandatory boolean parameter.
    */
 
-  @DISPID(3278) //= 0xcce. The runtime will prefer the VTID if present
+  @DISPID(3327) //= 0xcff. The runtime will prefer the VTID if present
   @VTID(213)
   void setDisplayValueNotAvailableAsBlank(
     boolean rhs);

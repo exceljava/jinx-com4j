@@ -1182,5 +1182,189 @@ public interface IShapes extends Com4jObject,Iterable<Com4jObject> {
     com.exceljava.com4j.office.MsoPictureCompress compress);
 
 
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter linkToFile is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter saveWithDocument is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter left is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter top is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter width is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter height is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(filename, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param filename Mandatory java.lang.String parameter.
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 7}, optParamIndex = {1, 2, 3, 4, 5, 6}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004", "80020004", "80020004", "80020004"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter saveWithDocument is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter left is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter top is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter width is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter height is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(filename, linkToFile, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param filename Mandatory java.lang.String parameter.
+   * @param linkToFile Optional parameter. Default value is com4j.Variant.getMissing()
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 7}, optParamIndex = {2, 3, 4, 5, 6}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004", "80020004", "80020004"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object linkToFile);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter left is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter top is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter width is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter height is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(filename, linkToFile, saveWithDocument, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param filename Mandatory java.lang.String parameter.
+   * @param linkToFile Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param saveWithDocument Optional parameter. Default value is com4j.Variant.getMissing()
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 7}, optParamIndex = {3, 4, 5, 6}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004", "80020004"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object linkToFile,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object saveWithDocument);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter top is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter width is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter height is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(filename, linkToFile, saveWithDocument, left, com4j.Variant.getMissing(), com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param filename Mandatory java.lang.String parameter.
+   * @param linkToFile Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param saveWithDocument Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param left Optional parameter. Default value is com4j.Variant.getMissing()
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3, 7}, optParamIndex = {4, 5, 6}, javaType = {java.lang.Object.class, java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004", "80020004"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object linkToFile,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object saveWithDocument,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object left);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter width is set to com4j.Variant.getMissing()</li><li>java.lang.Object parameter height is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(filename, linkToFile, saveWithDocument, left, top, com4j.Variant.getMissing(), com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param filename Mandatory java.lang.String parameter.
+   * @param linkToFile Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param saveWithDocument Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param left Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param top Optional parameter. Default value is com4j.Variant.getMissing()
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3, 4, 7}, optParamIndex = {5, 6}, javaType = {java.lang.Object.class, java.lang.Object.class}, nativeType = {NativeType.VARIANT, NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR, Variant.Type.VT_ERROR}, literal = {"80020004", "80020004"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object linkToFile,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object saveWithDocument,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object left,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object top);
+
+  /**
+   * <p>
+   * This method uses predefined default values for the following parameters:
+   * </p>
+   * <ul>
+     * <li>java.lang.Object parameter height is set to com4j.Variant.getMissing()</li></ul>
+   * <p>
+   * Therefore, using this method is equivalent to
+   * <code>
+   * add3DModel(filename, linkToFile, saveWithDocument, left, top, width, com4j.Variant.getMissing());
+   * </code>
+   * </p>
+   * @param filename Mandatory java.lang.String parameter.
+   * @param linkToFile Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param saveWithDocument Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param left Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param top Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param width Optional parameter. Default value is com4j.Variant.getMissing()
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  @UseDefaultValues(paramIndexMapping = {0, 1, 2, 3, 4, 5, 7}, optParamIndex = {6}, javaType = {java.lang.Object.class}, nativeType = {NativeType.VARIANT}, variantType = {Variant.Type.VT_ERROR}, literal = {"80020004"})
+  @ReturnValue(index=7)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object linkToFile,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object saveWithDocument,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object left,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object top,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object width);
+
+  /**
+   * @param filename Mandatory java.lang.String parameter.
+   * @param linkToFile Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param saveWithDocument Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param left Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param top Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param width Optional parameter. Default value is com4j.Variant.getMissing()
+   * @param height Optional parameter. Default value is com4j.Variant.getMissing()
+   * @return  Returns a value of type com.exceljava.com4j.excel.Shape
+   */
+
+  @VTID(35)
+  com.exceljava.com4j.excel.Shape add3DModel(
+    java.lang.String filename,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object linkToFile,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object saveWithDocument,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object left,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object top,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object width,
+    @Optional @MarshalAs(NativeType.VARIANT) java.lang.Object height);
+
+
   // Properties:
 }

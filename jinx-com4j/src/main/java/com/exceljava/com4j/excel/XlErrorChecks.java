@@ -59,6 +59,12 @@ public enum XlErrorChecks implements ComEnum {
    * </p>
    */
   xlInconsistentListFormula(9),
+  /**
+   * <p>
+   * The value of this constant is 10
+   * </p>
+   */
+  xlMisleadingFormat(10),
   ;
 
   private final int value;

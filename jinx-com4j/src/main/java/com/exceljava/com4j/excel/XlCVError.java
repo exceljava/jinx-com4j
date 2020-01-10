@@ -13,6 +13,12 @@ public enum XlCVError implements ComEnum {
   xlErrBlocked(2047),
   /**
    * <p>
+   * The value of this constant is 2050
+   * </p>
+   */
+  xlErrCalc(2050),
+  /**
+   * <p>
    * The value of this constant is 2046
    * </p>
    */
@@ -23,6 +29,12 @@ public enum XlCVError implements ComEnum {
    * </p>
    */
   xlErrDiv0(2007),
+  /**
+   * <p>
+   * The value of this constant is 2049
+   * </p>
+   */
+  xlErrField(2049),
   /**
    * <p>
    * The value of this constant is 2043
@@ -46,7 +58,7 @@ public enum XlCVError implements ComEnum {
    * The value of this constant is 2045
    * </p>
    */
-  xlErrNoSpill(2045),
+  xlErrSpill(2045),
   /**
    * <p>
    * The value of this constant is 2000

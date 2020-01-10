@@ -151,17 +151,6 @@ public interface CommentThreaded extends Com4jObject {
 
   /**
    * <p>
-   * Getter method for the COM property "SupportsReplies"
-   * </p>
-   */
-
-  @DISPID(3284)
-  @PropGet
-  boolean getSupportsReplies();
-
-
-  /**
-   * <p>
    * Getter method for the COM property "Replies"
    * </p>
    */
@@ -205,6 +194,30 @@ public interface CommentThreaded extends Com4jObject {
 
   @DISPID(503)
   com.exceljava.com4j.excel.CommentThreaded previous();
+
+
+  /**
+   * <p>
+   * Getter method for the COM property "Resolved"
+   * </p>
+   */
+
+  @DISPID(3304)
+  @PropGet
+  boolean getResolved();
+
+
+  /**
+   * <p>
+   * Setter method for the COM property "Resolved"
+   * </p>
+   * @param rhs Mandatory boolean parameter.
+   */
+
+  @DISPID(3304)
+  @PropPut
+  void setResolved(
+    boolean rhs);
 
 
   // Properties:
