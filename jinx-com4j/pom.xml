@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.exceljava</groupId>
         <artifactId>jinx-com4j-root</artifactId>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
         <relativePath>..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.github.exceljava.com4j</groupId>
             <artifactId>com4j</artifactId>
-            <version>release-20190528</version>
+            <version>release-20260827</version>
         </dependency>
     </dependencies>
 
