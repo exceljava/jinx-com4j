@@ -59,6 +59,11 @@ public class JinxBridge {
     @ExcelArgumentConverter
     public static <T extends Com4jObject> T convertIUnknown(IUnknown unk, Class<T> cls) {
         Com4jObject obj = COM4J.wrapSta(Com4jObject.class, unk.getPointer(true));
-        return obj.queryInterface(cls);
+        try {
+            return obj.queryInterface(cls);
+        }
+        finally {
+            obj.dispose();
+        }
     }
 }

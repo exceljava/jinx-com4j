@@ -43,6 +43,11 @@ class IUnknownAdaptor implements IUnknown {
 
     @Override
     public void close() {
+        Com4jObject obj = this.obj;
         this.obj = null;
+
+        if (null != obj) {
+            obj.dispose();
+        }
     }
 }
