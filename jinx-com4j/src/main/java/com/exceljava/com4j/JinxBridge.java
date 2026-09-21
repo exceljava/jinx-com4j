@@ -51,6 +51,11 @@ public class JinxBridge {
      * an IUnknown would be passed by Jinx. For example, in the
      * ribbon actions.
      *
+     * When running with Jinx 3.0 or later, the returned object is
+     * disposed of once the current Excel call has completed rather
+     * than waiting for it to be garbage collected. It should not be
+     * kept and used after the call has completed.
+     *
      * @param unk IUnknown instance.
      * @param cls Class of type to cast to.
      * @param <T> Type to cast to.
@@ -60,7 +65,11 @@ public class JinxBridge {
     public static <T extends Com4jObject> T convertIUnknown(IUnknown unk, Class<T> cls) {
         Com4jObject obj = COM4J.wrapSta(Com4jObject.class, unk.getPointer(true));
         try {
-            return obj.queryInterface(cls);
+            T result = obj.queryInterface(cls);
+            if (null != result) {
+                ExcelCallHelper.onClose(result::dispose);
+            }
+            return result;
         }
         finally {
             obj.dispose();

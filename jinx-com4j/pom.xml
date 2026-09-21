@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.github.exceljava.com4j</groupId>
             <artifactId>com4j</artifactId>
-            <version>release-20260827</version>
+            <version>release-20260921</version>
         </dependency>
     </dependencies>
 
