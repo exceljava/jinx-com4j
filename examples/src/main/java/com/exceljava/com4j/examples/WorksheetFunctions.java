@@ -3,7 +3,9 @@ package com.exceljava.com4j.examples;
 import com.exceljava.com4j.JinxBridge;
 import com.exceljava.com4j.excel.*;
 import com.exceljava.jinx.*;
+import com4j.COM4J;
 import com4j.Com4jObject;
+import com4j.util.ComObjectCollector;
 
 import java.util.Random;
 
@@ -50,25 +52,36 @@ public class WorksheetFunctions {
 
         // Before returning, schedule a call to color the returned table
         xl.schedule(() -> {
-            _Application app = JinxBridge.getApplication(xl);
-            Range range = app.getRange(address);
+            // Collect the COM objects created by this callback so that they
+            // can all be disposed of before returning
+            ComObjectCollector collector = new ComObjectCollector();
+            COM4J.addListener(collector);
 
-            // Excel ranges are indexed from 1
-            Range topLeft = ((Com4jObject)range.getItem(1, 1)).queryInterface(Range.class);
-            Range topRight = ((Com4jObject)range.getItem(1, usedNumCols)).queryInterface(Range.class);
+            try {
+                _Application app = JinxBridge.getApplication(xl);
+                Range range = app.getRange(address);
 
-            // Set the background and font color of the header
-            Range header = app.getRange(topLeft, topRight);
-            header.getInterior().setColor(0xC47244);
-            header.getFont().setColor(0xFFFFFF);
+                // Excel ranges are indexed from 1
+                Range topLeft = ((Com4jObject)range.getItem(1, 1)).queryInterface(Range.class);
+                Range topRight = ((Com4jObject)range.getItem(1, usedNumCols)).queryInterface(Range.class);
 
-            // Set the background and font color of the rows
-            for (int i=2; i<=usedNumRows; i++) {
-                Range left = ((Com4jObject)range.getItem(i, 1)).queryInterface(Range.class);
-                Range right = ((Com4jObject)range.getItem(i, usedNumCols)).queryInterface(Range.class);
-                Range row = app.getRange(left, right);
-                row.getInterior().setColor(i % 2 == 0 ? 0xFAF1EA : 0xFFFFFF);
-                row.getFont().setColor(0x000000);
+                // Set the background and font color of the header
+                Range header = app.getRange(topLeft, topRight);
+                header.getInterior().setColor(0xC47244);
+                header.getFont().setColor(0xFFFFFF);
+
+                // Set the background and font color of the rows
+                for (int i=2; i<=usedNumRows; i++) {
+                    Range left = ((Com4jObject)range.getItem(i, 1)).queryInterface(Range.class);
+                    Range right = ((Com4jObject)range.getItem(i, usedNumCols)).queryInterface(Range.class);
+                    Range row = app.getRange(left, right);
+                    row.getInterior().setColor(i % 2 == 0 ? 0xFAF1EA : 0xFFFFFF);
+                    row.getFont().setColor(0x000000);
+                }
+            }
+            finally {
+                collector.disposeAll();
+                COM4J.removeListener(collector);
             }
         });
 
