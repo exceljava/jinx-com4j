@@ -8,3 +8,4 @@
 com.exceljava.com4j.examples.MacroFunctions
 com.exceljava.com4j.examples.MenuFunctions
 com.exceljava.com4j.examples.WorksheetFunctions
+com.exceljava.com4j.examples.EventHandlers
